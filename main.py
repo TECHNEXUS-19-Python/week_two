@@ -64,26 +64,3 @@
 # else:
 #     print("It is not a  leap year")
 
-#Pizza Orders
-price = 0
-print("Welcome to Python Pizza Deliveries")
-size = input("What size of pizza do you want? s, m or l ")
-
-if size == "s" or "S":
-    price += 15
-elif size == "m" or "M":
-    price += 20
-else:
-    price += 25
-
-add_pepperoni = input("Do you want pepperoni? y or n ")
-if add_pepperoni == "y" or "Y":
-    if size == "s" or "S":
-        price += 2
-    else:
-        price += 3
-extra_cheese = input("Do you want extra cheese? y or n ")
-if extra_cheese == "y" or "Y":
-    price += 1
-
-print(f"Your final bill is {price}")
